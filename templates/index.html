@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планировщик Путешествий</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            box-sizing: border-box;
+            padding-top: 30px; /* Увеличенный отступ сверху */
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        button:focus {
+            outline: none;
+        }
+        #map {
+            height: 400px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .form-actions button {
+            margin-right: 0;
+        }
+        .error {
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Планировщик Путешествий</h1>
+        <form id="routeForm">
+            <div class="form-group">
+                <label for="location">Местоположение (широта, долгота):</label>
+                <input type="text" id="location" name="location" placeholder="55.7558, 37.6176" readonly required>
+                <div class="form-actions">
+                    <button type="button" id="getCurrentLocation">Определить Мое Местоположение</button>
+                    <button type="button" id="chooseLocation">Выбрать Местоположение на Карте</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Или введите адрес:</label>
+                <input type="text" id="address" name="address" placeholder="Введите адрес или почтовый индекс">
+                <button type="button" id="findAddress">Найти по Адресу</button>
+            </div>
+            <div class="form-group">
+                <label for="interests">Интересы (через запятую):</label>
+                <input type="text" id="interests" name="interests" placeholder="Рестораны, достопримечательности, отели" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Получить Маршрут</button>
+            </div>
+        </form>
+        <div id="map"></div>
+        <div id="error" class="error"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        let map;
+        let marker;
+
+        // Initialize the map
+        function initMap(lat, lng) {
+            map = L.map('map').setView([lat, lng], 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap'
+            }).addTo(map);
+
+            // Add click event to map
+            map.on('click', function(e) {
+                if (marker) {
+                    map.removeLayer(marker);
+                }
+                marker = L.marker(e.latlng).addTo(map);
+                document.getElementById('location').value = `${e.latlng.lat.toFixed(6)},${e.latlng.lng.toFixed(6)}`;
+            });
+        }
+
+        // Get current location
+        document.getElementById('getCurrentLocation').onclick = function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+                    document.getElementById('location').value = `${lat.toFixed(6)},${lng.toFixed(6)}`;
+                    if (map) {
+                        map.setView([lat, lng], 13);
+                    } else {
+                        initMap(lat, lng);
+                    }
+                    if (marker) {
+                        map.removeLayer(marker);
+                    }
+                    marker = L.marker([lat, lng]).addTo(map);
+                }, function() {
+                    document.getElementById('error').textContent = 'Не удалось определить ваше местоположение.';
+                });
+            } else {
+                document.getElementById('error').textContent = 'Ваш браузер не поддерживает геолокацию.';
+            }
+        };
+
+        // Find address using Nominatim API
+        document.getElementById('findAddress').onclick = async function() {
+            const address = document.getElementById('address').value;
+            if (!address) {
+                document.getElementById('error').textContent = 'Пожалуйста, введите адрес.';
+                return;
+            }
+            const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(address)}&format=json&addressdetails=1`);
+            const data = await response.json();
+            if (data.length > 0) {
+                const lat = data[0].lat;
+                const lng = data[0].lon;
+                document.getElementById('location').value = `${lat},${lng}`;
+                if (marker) {
+                    map.removeLayer(marker);
+                }
+                if (map) {
+                    map.setView([lat, lng], 13);
+                } else {
+                    initMap(lat, lng);
+                }
+                marker = L.marker([lat, lng]).addTo(map);
+                document.getElementById('error').textContent = '';
+            } else {
+                document.getElementById('error').textContent = 'Не удалось найти адрес.';
+            }
+        };
+
+        // Show map and setup
+        document.getElementById('chooseLocation').onclick = function() {
+            const location = document.getElementById('location').value;
+            const [lat, lng] = location ? location.split(',') : [51.505, -0.09]; // Default to London coordinates
+            initMap(parseFloat(lat), parseFloat(lng));
+        };
+
+        // Handle form submission
+        document.getElementById('routeForm').onsubmit = async function(event) {
+            event.preventDefault();
+            const location = document.getElementById('location').value;
+            const interests = document.getElementById('interests').value.split(',');
+            if (!location) {
+                document.getElementById('error').textContent = 'Пожалуйста, укажите местоположение.';
+                return;
+            }
+            document.getElementById('error').textContent = '';
+            const response = await fetch('/get_route', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ location, interests })
+            });
+            const data = await response.json();
+            if (data.map) {
+                window.location.href = `/maps/${data.map}`;
+            } else {
+                document.getElementById('error').textContent = 'Ошибка получения маршрута.';
+            }
+        };
+    </script>
+</body>
+</html>

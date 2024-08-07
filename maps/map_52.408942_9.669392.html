@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d04216c9c050b8b8467bfbc718d20dfa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d04216c9c050b8b8467bfbc718d20dfa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d04216c9c050b8b8467bfbc718d20dfa = L.map(
+                "map_d04216c9c050b8b8467bfbc718d20dfa",
+                {
+                    center: [52.408942, 9.669392],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_745123dcc7945a1214aff938abd8c809 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_745123dcc7945a1214aff938abd8c809.addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var marker_e56d669e059a549665e51feb2977a707 = L.marker(
+                [52.372501, 9.709868],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_8301546156dfdb57676d428db7cb3df1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e56d669e059a549665e51feb2977a707.setIcon(icon_8301546156dfdb57676d428db7cb3df1);
+        
+    
+        var popup_3d3fb0a8405098a83ed6769d98c24f9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5d7aba6aaae1ef2b6118df9f72668bf = $(`<div id="html_f5d7aba6aaae1ef2b6118df9f72668bf" style="width: 100.0%; height: 100.0%;">Cafe Bar<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_3d3fb0a8405098a83ed6769d98c24f9f.setContent(html_f5d7aba6aaae1ef2b6118df9f72668bf);
+            
+        
+
+        marker_e56d669e059a549665e51feb2977a707.bindPopup(popup_3d3fb0a8405098a83ed6769d98c24f9f)
+        ;
+
+        
+    
+    
+            var marker_4d1dddc70d4358646cc27f8309f7f851 = L.marker(
+                [52.367468, 9.714102],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_9ef994ccc0916c2133efc9210a9865dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d1dddc70d4358646cc27f8309f7f851.setIcon(icon_9ef994ccc0916c2133efc9210a9865dd);
+        
+    
+        var popup_7f28d7d4ec9da1565b6983a0c39833f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf484c9cd19ab9e993961387fd6668ce = $(`<div id="html_bf484c9cd19ab9e993961387fd6668ce" style="width: 100.0%; height: 100.0%;">MarktCafé<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_7f28d7d4ec9da1565b6983a0c39833f6.setContent(html_bf484c9cd19ab9e993961387fd6668ce);
+            
+        
+
+        marker_4d1dddc70d4358646cc27f8309f7f851.bindPopup(popup_7f28d7d4ec9da1565b6983a0c39833f6)
+        ;
+
+        
+    
+    
+            var marker_dd78ede16e9e98e02cdbdc9bc3f77843 = L.marker(
+                [52.375586, 9.704152],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_5268860d792eb5fca529dcfa34b1f96f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dd78ede16e9e98e02cdbdc9bc3f77843.setIcon(icon_5268860d792eb5fca529dcfa34b1f96f);
+        
+    
+        var popup_33435d6467ef1437c02383fd6596fb50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c23d17cf067003bf3c2a591369ee67ca = $(`<div id="html_c23d17cf067003bf3c2a591369ee67ca" style="width: 100.0%; height: 100.0%;">Menagerie<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_33435d6467ef1437c02383fd6596fb50.setContent(html_c23d17cf067003bf3c2a591369ee67ca);
+            
+        
+
+        marker_dd78ede16e9e98e02cdbdc9bc3f77843.bindPopup(popup_33435d6467ef1437c02383fd6596fb50)
+        ;
+
+        
+    
+    
+            var marker_a305b9a8837ce9748316c131b5c68683 = L.marker(
+                [52.368193, 9.714876],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_96df27e1a69aeab39d7363cbeca6c5ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a305b9a8837ce9748316c131b5c68683.setIcon(icon_96df27e1a69aeab39d7363cbeca6c5ea);
+        
+    
+        var popup_a1bae3a8e6cb4e2964149cbca681c828 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f63aa7b9aa3e962792aa0afe0a4febb = $(`<div id="html_2f63aa7b9aa3e962792aa0afe0a4febb" style="width: 100.0%; height: 100.0%;">Frioli die Eismanufaktur<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_a1bae3a8e6cb4e2964149cbca681c828.setContent(html_2f63aa7b9aa3e962792aa0afe0a4febb);
+            
+        
+
+        marker_a305b9a8837ce9748316c131b5c68683.bindPopup(popup_a1bae3a8e6cb4e2964149cbca681c828)
+        ;
+
+        
+    
+    
+            var marker_3bf1d9c1d3b8fdac9ef6ba0eded1f8bf = L.marker(
+                [52.39047, 9.749727],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_ec80c092122b1139b99bfbf866a3b966 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3bf1d9c1d3b8fdac9ef6ba0eded1f8bf.setIcon(icon_ec80c092122b1139b99bfbf866a3b966);
+        
+    
+        var popup_729978cd88ca426d6edfbb5f429ad3e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3a71008539cf8e4a6ec0297a474b175 = $(`<div id="html_d3a71008539cf8e4a6ec0297a474b175" style="width: 100.0%; height: 100.0%;">Bistro Da Toni<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_729978cd88ca426d6edfbb5f429ad3e5.setContent(html_d3a71008539cf8e4a6ec0297a474b175);
+            
+        
+
+        marker_3bf1d9c1d3b8fdac9ef6ba0eded1f8bf.bindPopup(popup_729978cd88ca426d6edfbb5f429ad3e5)
+        ;
+
+        
+    
+    
+            var marker_7ef9c5fc0932ed4667f7a7adcca2e967 = L.marker(
+                [52.367834, 9.720746],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_d4e62c9faee2d6fa05fbfeb99fc2eb2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ef9c5fc0932ed4667f7a7adcca2e967.setIcon(icon_d4e62c9faee2d6fa05fbfeb99fc2eb2d);
+        
+    
+        var popup_2b2e48430fbf265456d6de28343cad5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88a703469cc5cbd44f0e0f2a98888c1e = $(`<div id="html_88a703469cc5cbd44f0e0f2a98888c1e" style="width: 100.0%; height: 100.0%;">The Harp<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_2b2e48430fbf265456d6de28343cad5d.setContent(html_88a703469cc5cbd44f0e0f2a98888c1e);
+            
+        
+
+        marker_7ef9c5fc0932ed4667f7a7adcca2e967.bindPopup(popup_2b2e48430fbf265456d6de28343cad5d)
+        ;
+
+        
+    
+    
+            var marker_17ac5eac3224b2c472074fbab58e56b6 = L.marker(
+                [52.370818, 9.737726],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_151f348df29faa0251e414753f8b8eeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_17ac5eac3224b2c472074fbab58e56b6.setIcon(icon_151f348df29faa0251e414753f8b8eeb);
+        
+    
+        var popup_4a9bc60f14037d24b2e74d83bd231a71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b6c4a2669a36740a46fd85a73511afa = $(`<div id="html_1b6c4a2669a36740a46fd85a73511afa" style="width: 100.0%; height: 100.0%;">Kuhnstwerk<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_4a9bc60f14037d24b2e74d83bd231a71.setContent(html_1b6c4a2669a36740a46fd85a73511afa);
+            
+        
+
+        marker_17ac5eac3224b2c472074fbab58e56b6.bindPopup(popup_4a9bc60f14037d24b2e74d83bd231a71)
+        ;
+
+        
+    
+    
+            var marker_e76462359a396d48fd5db8d842dfe16e = L.marker(
+                [52.373223, 9.707373],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_9ad0c99402c4c45afccdc6cfde8e6bdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e76462359a396d48fd5db8d842dfe16e.setIcon(icon_9ad0c99402c4c45afccdc6cfde8e6bdd);
+        
+    
+        var popup_779a87d0ea4f045564c9844f7582e837 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f40599699470ddd78b1a23c58a4f6448 = $(`<div id="html_f40599699470ddd78b1a23c58a4f6448" style="width: 100.0%; height: 100.0%;">Lamara<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_779a87d0ea4f045564c9844f7582e837.setContent(html_f40599699470ddd78b1a23c58a4f6448);
+            
+        
+
+        marker_e76462359a396d48fd5db8d842dfe16e.bindPopup(popup_779a87d0ea4f045564c9844f7582e837)
+        ;
+
+        
+    
+    
+            var marker_72470679ed214d63c3d1bbf1f53cbe2c = L.marker(
+                [52.38292, 9.725213],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_919e7344853b1ea1269528ccd9c8fa5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_72470679ed214d63c3d1bbf1f53cbe2c.setIcon(icon_919e7344853b1ea1269528ccd9c8fa5f);
+        
+    
+        var popup_e24cab25b9c03bb1c0509edfc0762bd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4909e788d7f9bc6bf117db1b220b0c13 = $(`<div id="html_4909e788d7f9bc6bf117db1b220b0c13" style="width: 100.0%; height: 100.0%;">Francesca & Fratelli<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_e24cab25b9c03bb1c0509edfc0762bd5.setContent(html_4909e788d7f9bc6bf117db1b220b0c13);
+            
+        
+
+        marker_72470679ed214d63c3d1bbf1f53cbe2c.bindPopup(popup_e24cab25b9c03bb1c0509edfc0762bd5)
+        ;
+
+        
+    
+    
+            var marker_c2de80b53f9b1427d456902311b3902b = L.marker(
+                [52.395964, 9.765112],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_f7a2abba89392ed5be880110948f8c2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c2de80b53f9b1427d456902311b3902b.setIcon(icon_f7a2abba89392ed5be880110948f8c2e);
+        
+    
+        var popup_2bfee03f24dbc78afa7b3191ee724c8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_386948c670065766b98af16a1dcaa162 = $(`<div id="html_386948c670065766b98af16a1dcaa162" style="width: 100.0%; height: 100.0%;">Hofbäckerei<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_2bfee03f24dbc78afa7b3191ee724c8e.setContent(html_386948c670065766b98af16a1dcaa162);
+            
+        
+
+        marker_c2de80b53f9b1427d456902311b3902b.bindPopup(popup_2bfee03f24dbc78afa7b3191ee724c8e)
+        ;
+
+        
+    
+    
+            var marker_cb8eb7c270bc586402d961abcad9878d = L.marker(
+                [52.375192, 9.746965],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_0765312f726c45a82953a944a997cb15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb8eb7c270bc586402d961abcad9878d.setIcon(icon_0765312f726c45a82953a944a997cb15);
+        
+    
+        var popup_07ebfe790586df1520e85c4eb6b43343 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae5177cf75d7ec31de20bfd3027d466d = $(`<div id="html_ae5177cf75d7ec31de20bfd3027d466d" style="width: 100.0%; height: 100.0%;">Al-Dar<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_07ebfe790586df1520e85c4eb6b43343.setContent(html_ae5177cf75d7ec31de20bfd3027d466d);
+            
+        
+
+        marker_cb8eb7c270bc586402d961abcad9878d.bindPopup(popup_07ebfe790586df1520e85c4eb6b43343)
+        ;
+
+        
+    
+    
+            var marker_4730869bbec9ccdc82f0397de6eb14e0 = L.marker(
+                [52.389082, 9.742345],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_7117ec18d6f4fe2c569a9899a4b0c236 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4730869bbec9ccdc82f0397de6eb14e0.setIcon(icon_7117ec18d6f4fe2c569a9899a4b0c236);
+        
+    
+        var popup_2e15b2cf71f6aa8902a7488a202fea43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9aba05b25a4c0ed423ec56f915b7ee5 = $(`<div id="html_d9aba05b25a4c0ed423ec56f915b7ee5" style="width: 100.0%; height: 100.0%;">Da Pino<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_2e15b2cf71f6aa8902a7488a202fea43.setContent(html_d9aba05b25a4c0ed423ec56f915b7ee5);
+            
+        
+
+        marker_4730869bbec9ccdc82f0397de6eb14e0.bindPopup(popup_2e15b2cf71f6aa8902a7488a202fea43)
+        ;
+
+        
+    
+    
+            var marker_895270476b67cef6d6bd2d03971014b3 = L.marker(
+                [52.356022, 9.731533],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_42864f62573665eae7004d7903411f13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_895270476b67cef6d6bd2d03971014b3.setIcon(icon_42864f62573665eae7004d7903411f13);
+        
+    
+        var popup_633302e42c2d45be90aaca6953b3a3d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33bcba7918a02773a693ca02d68c9a6d = $(`<div id="html_33bcba7918a02773a693ca02d68c9a6d" style="width: 100.0%; height: 100.0%;">Finca<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_633302e42c2d45be90aaca6953b3a3d9.setContent(html_33bcba7918a02773a693ca02d68c9a6d);
+            
+        
+
+        marker_895270476b67cef6d6bd2d03971014b3.bindPopup(popup_633302e42c2d45be90aaca6953b3a3d9)
+        ;
+
+        
+    
+    
+            var marker_0dc6f41f606c18f72edc2d55ccad39ca = L.marker(
+                [52.373342, 9.738929],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_c5103777818f92a1c9a6e7e841342b1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0dc6f41f606c18f72edc2d55ccad39ca.setIcon(icon_c5103777818f92a1c9a6e7e841342b1d);
+        
+    
+        var popup_acdc124e8dcfdbe1d0670997066f5131 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5e46501072107a48ab3bd99f62ada06 = $(`<div id="html_f5e46501072107a48ab3bd99f62ada06" style="width: 100.0%; height: 100.0%;">Block House<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_acdc124e8dcfdbe1d0670997066f5131.setContent(html_f5e46501072107a48ab3bd99f62ada06);
+            
+        
+
+        marker_0dc6f41f606c18f72edc2d55ccad39ca.bindPopup(popup_acdc124e8dcfdbe1d0670997066f5131)
+        ;
+
+        
+    
+    
+            var marker_cf9f0d4f7da8ffcedc1907cdd640e049 = L.marker(
+                [52.380704, 9.745174],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_ad7b1738c4ab0f3c9666ab168d5fd2f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf9f0d4f7da8ffcedc1907cdd640e049.setIcon(icon_ad7b1738c4ab0f3c9666ab168d5fd2f2);
+        
+    
+        var popup_ddeef582a347759ec4b57e6bbe1daba5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9728f72fbca797a2e14f48b28f5dd44c = $(`<div id="html_9728f72fbca797a2e14f48b28f5dd44c" style="width: 100.0%; height: 100.0%;">Mezzo<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_ddeef582a347759ec4b57e6bbe1daba5.setContent(html_9728f72fbca797a2e14f48b28f5dd44c);
+            
+        
+
+        marker_cf9f0d4f7da8ffcedc1907cdd640e049.bindPopup(popup_ddeef582a347759ec4b57e6bbe1daba5)
+        ;
+
+        
+    
+    
+            var marker_270c4f56f05f1e4fc9eb9fb4ea5bdb36 = L.marker(
+                [52.376799, 9.755084],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_76b254e851059868d68f32d97a850b51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_270c4f56f05f1e4fc9eb9fb4ea5bdb36.setIcon(icon_76b254e851059868d68f32d97a850b51);
+        
+    
+        var popup_068f0b46883172514f04a573dda94c2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df281456766798b1d6d37e8740556092 = $(`<div id="html_df281456766798b1d6d37e8740556092" style="width: 100.0%; height: 100.0%;">Zurück Zum Glück<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_068f0b46883172514f04a573dda94c2f.setContent(html_df281456766798b1d6d37e8740556092);
+            
+        
+
+        marker_270c4f56f05f1e4fc9eb9fb4ea5bdb36.bindPopup(popup_068f0b46883172514f04a573dda94c2f)
+        ;
+
+        
+    
+    
+            var marker_81cde98d737d8f96c6143d490bb7ae69 = L.marker(
+                [52.372753, 9.709886],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_369182307e63660f0a2df3193bb2baf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_81cde98d737d8f96c6143d490bb7ae69.setIcon(icon_369182307e63660f0a2df3193bb2baf7);
+        
+    
+        var popup_c0752c86ba7a73c5fe6d101b9eea972e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86385111235938fdf536cadc3a2e4d87 = $(`<div id="html_86385111235938fdf536cadc3a2e4d87" style="width: 100.0%; height: 100.0%;">Street Kitchen<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_c0752c86ba7a73c5fe6d101b9eea972e.setContent(html_86385111235938fdf536cadc3a2e4d87);
+            
+        
+
+        marker_81cde98d737d8f96c6143d490bb7ae69.bindPopup(popup_c0752c86ba7a73c5fe6d101b9eea972e)
+        ;
+
+        
+    
+    
+            var marker_f3aa613813eec3f59975a6db91a4dec1 = L.marker(
+                [52.3867, 9.748072],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_d24bbedcd82bea4840ce8400e87b4553 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3aa613813eec3f59975a6db91a4dec1.setIcon(icon_d24bbedcd82bea4840ce8400e87b4553);
+        
+    
+        var popup_7433776714e2ad43f613807057c0ad07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1487e0e730f55c0ede7e8697a4f2e3e0 = $(`<div id="html_1487e0e730f55c0ede7e8697a4f2e3e0" style="width: 100.0%; height: 100.0%;">CODO - Street Kitchen<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_7433776714e2ad43f613807057c0ad07.setContent(html_1487e0e730f55c0ede7e8697a4f2e3e0);
+            
+        
+
+        marker_f3aa613813eec3f59975a6db91a4dec1.bindPopup(popup_7433776714e2ad43f613807057c0ad07)
+        ;
+
+        
+    
+    
+            var marker_dc0266dfa6a80c91af4c4488f2ed362c = L.marker(
+                [52.387616, 9.741156],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_9d2c21851ca7d67eaa736a6307a89cbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc0266dfa6a80c91af4c4488f2ed362c.setIcon(icon_9d2c21851ca7d67eaa736a6307a89cbd);
+        
+    
+        var popup_41c3657ba685886d547dfa5952374d36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa8ccae43a91a70890c276cb2441df37 = $(`<div id="html_fa8ccae43a91a70890c276cb2441df37" style="width: 100.0%; height: 100.0%;">Boca Gastrobar<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_41c3657ba685886d547dfa5952374d36.setContent(html_fa8ccae43a91a70890c276cb2441df37);
+            
+        
+
+        marker_dc0266dfa6a80c91af4c4488f2ed362c.bindPopup(popup_41c3657ba685886d547dfa5952374d36)
+        ;
+
+        
+    
+    
+            var marker_07de8d8ed9dbe009205cdd846c300c2d = L.marker(
+                [52.370137, 9.758557],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_013562cdacb652ee02a2771f4d373e5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_07de8d8ed9dbe009205cdd846c300c2d.setIcon(icon_013562cdacb652ee02a2771f4d373e5a);
+        
+    
+        var popup_3c5ae4349a19b14461988a13071aa5ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87de53e26c9884b0fd12e54e135c2dc2 = $(`<div id="html_87de53e26c9884b0fd12e54e135c2dc2" style="width: 100.0%; height: 100.0%;">Eliniko<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_3c5ae4349a19b14461988a13071aa5ea.setContent(html_87de53e26c9884b0fd12e54e135c2dc2);
+            
+        
+
+        marker_07de8d8ed9dbe009205cdd846c300c2d.bindPopup(popup_3c5ae4349a19b14461988a13071aa5ea)
+        ;
+
+        
+    
+    
+            var marker_3838b354ad91079b460993af373ab60b = L.marker(
+                [52.356928, 9.768958],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_a5eb1873da9177e198845abb82f5b204 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3838b354ad91079b460993af373ab60b.setIcon(icon_a5eb1873da9177e198845abb82f5b204);
+        
+    
+        var popup_4c49355fa1c8bd0eb8318d391c3a6f29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26e555ed6006a595e31f1ffd9450c5ad = $(`<div id="html_26e555ed6006a595e31f1ffd9450c5ad" style="width: 100.0%; height: 100.0%;">Kale Restaurant<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_4c49355fa1c8bd0eb8318d391c3a6f29.setContent(html_26e555ed6006a595e31f1ffd9450c5ad);
+            
+        
+
+        marker_3838b354ad91079b460993af373ab60b.bindPopup(popup_4c49355fa1c8bd0eb8318d391c3a6f29)
+        ;
+
+        
+    
+    
+            var marker_44fee807f5ea58c09e6c585d90f4a2eb = L.marker(
+                [52.363261, 9.754853],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_b36ab1d7d496b02bee34377c9711b8e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44fee807f5ea58c09e6c585d90f4a2eb.setIcon(icon_b36ab1d7d496b02bee34377c9711b8e2);
+        
+    
+        var popup_a2d2200897aa0f1a7ed923cd548f2b17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2db7755d2556fb7610c9e7e9d50d5c6b = $(`<div id="html_2db7755d2556fb7610c9e7e9d50d5c6b" style="width: 100.0%; height: 100.0%;">Beef and Reef Restaurant GmbH<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_a2d2200897aa0f1a7ed923cd548f2b17.setContent(html_2db7755d2556fb7610c9e7e9d50d5c6b);
+            
+        
+
+        marker_44fee807f5ea58c09e6c585d90f4a2eb.bindPopup(popup_a2d2200897aa0f1a7ed923cd548f2b17)
+        ;
+
+        
+    
+    
+            var marker_15922cde43bd200965cd9bece72dbea4 = L.marker(
+                [52.360848, 9.762983],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_79bf3113e9a5d35688de3b7fb6dcc5f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_15922cde43bd200965cd9bece72dbea4.setIcon(icon_79bf3113e9a5d35688de3b7fb6dcc5f7);
+        
+    
+        var popup_283c6a37808e2d755d1d210a26fe7d0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e483646ef857ab70726b2495656f5904 = $(`<div id="html_e483646ef857ab70726b2495656f5904" style="width: 100.0%; height: 100.0%;">Ilion<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_283c6a37808e2d755d1d210a26fe7d0a.setContent(html_e483646ef857ab70726b2495656f5904);
+            
+        
+
+        marker_15922cde43bd200965cd9bece72dbea4.bindPopup(popup_283c6a37808e2d755d1d210a26fe7d0a)
+        ;
+
+        
+    
+    
+            var marker_4ecf5dd69eb5d7480052bfe1f1904f47 = L.marker(
+                [52.372429, 9.736136],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_5db15f052347f3212a356220ad8dfb94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ecf5dd69eb5d7480052bfe1f1904f47.setIcon(icon_5db15f052347f3212a356220ad8dfb94);
+        
+    
+        var popup_d56227c92e352e85253c7ff50f544498 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f726b543d5df0fe1ee5de9b9213414d9 = $(`<div id="html_f726b543d5df0fe1ee5de9b9213414d9" style="width: 100.0%; height: 100.0%;">Francesca & Fratelli<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_d56227c92e352e85253c7ff50f544498.setContent(html_f726b543d5df0fe1ee5de9b9213414d9);
+            
+        
+
+        marker_4ecf5dd69eb5d7480052bfe1f1904f47.bindPopup(popup_d56227c92e352e85253c7ff50f544498)
+        ;
+
+        
+    
+    
+            var marker_205115bdafc45ad8af16a3310aa4fb1f = L.marker(
+                [52.384385, 9.746943],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_5d6191d5e1209df33993063b905fd379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_205115bdafc45ad8af16a3310aa4fb1f.setIcon(icon_5d6191d5e1209df33993063b905fd379);
+        
+    
+        var popup_a5198c60c854dcccc0a9d5d1bafae61e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9817a562c72e85f829ca11111e80b9a2 = $(`<div id="html_9817a562c72e85f829ca11111e80b9a2" style="width: 100.0%; height: 100.0%;">Ecco Feinkost<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_a5198c60c854dcccc0a9d5d1bafae61e.setContent(html_9817a562c72e85f829ca11111e80b9a2);
+            
+        
+
+        marker_205115bdafc45ad8af16a3310aa4fb1f.bindPopup(popup_a5198c60c854dcccc0a9d5d1bafae61e)
+        ;
+
+        
+    
+    
+            var marker_0b16e10a64f3c0a0c9987765afa295fb = L.marker(
+                [52.372482, 9.743742],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_86631fcc5782738e027c357ff80efaa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b16e10a64f3c0a0c9987765afa295fb.setIcon(icon_86631fcc5782738e027c357ff80efaa8);
+        
+    
+        var popup_8e8fc446a7f775ebf77679e79568fac6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd0a3503447d12452562225969413f48 = $(`<div id="html_cd0a3503447d12452562225969413f48" style="width: 100.0%; height: 100.0%;">Weinstube Leonardo<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_8e8fc446a7f775ebf77679e79568fac6.setContent(html_cd0a3503447d12452562225969413f48);
+            
+        
+
+        marker_0b16e10a64f3c0a0c9987765afa295fb.bindPopup(popup_8e8fc446a7f775ebf77679e79568fac6)
+        ;
+
+        
+    
+    
+            var marker_4e570dc58f92a80547dcee8876297bc9 = L.marker(
+                [52.380727, 9.728105],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_2d9566c8a7d4fba433e0e754f8a2afa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e570dc58f92a80547dcee8876297bc9.setIcon(icon_2d9566c8a7d4fba433e0e754f8a2afa0);
+        
+    
+        var popup_18b3eaaab92ca742387c09bf89c1430d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0851e12f5bf9a0debbf939ed0caeb8c4 = $(`<div id="html_0851e12f5bf9a0debbf939ed0caeb8c4" style="width: 100.0%; height: 100.0%;">Platia<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_18b3eaaab92ca742387c09bf89c1430d.setContent(html_0851e12f5bf9a0debbf939ed0caeb8c4);
+            
+        
+
+        marker_4e570dc58f92a80547dcee8876297bc9.bindPopup(popup_18b3eaaab92ca742387c09bf89c1430d)
+        ;
+
+        
+    
+    
+            var marker_b9503d73114847d707d7ab153945cc0f = L.marker(
+                [52.394339, 9.737826],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_82e0db2446f37dc84b05076a101c5506 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b9503d73114847d707d7ab153945cc0f.setIcon(icon_82e0db2446f37dc84b05076a101c5506);
+        
+    
+        var popup_6d72f97915465f0b276d8b109037979f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69ff2ac7fb988e4e6c115a1e775cb3dc = $(`<div id="html_69ff2ac7fb988e4e6c115a1e775cb3dc" style="width: 100.0%; height: 100.0%;">Basil Restaurant<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_6d72f97915465f0b276d8b109037979f.setContent(html_69ff2ac7fb988e4e6c115a1e775cb3dc);
+            
+        
+
+        marker_b9503d73114847d707d7ab153945cc0f.bindPopup(popup_6d72f97915465f0b276d8b109037979f)
+        ;
+
+        
+    
+    
+            var marker_75a1438270ba733d7ef61e2d124f75c9 = L.marker(
+                [52.370234, 9.76069],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_a69720d2d2182a9ced1b5ceb2f94911b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_75a1438270ba733d7ef61e2d124f75c9.setIcon(icon_a69720d2d2182a9ced1b5ceb2f94911b);
+        
+    
+        var popup_8294cdc19fad6ca8d5b4c8b4b4770cb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44e8a180b73725204595d6870c890932 = $(`<div id="html_44e8a180b73725204595d6870c890932" style="width: 100.0%; height: 100.0%;">Jante<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_8294cdc19fad6ca8d5b4c8b4b4770cb2.setContent(html_44e8a180b73725204595d6870c890932);
+            
+        
+
+        marker_75a1438270ba733d7ef61e2d124f75c9.bindPopup(popup_8294cdc19fad6ca8d5b4c8b4b4770cb2)
+        ;
+
+        
+    
+    
+            var marker_e745ade1f33efed5ebd9c5bb81803e73 = L.marker(
+                [52.374183, 9.744746],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_4026d184f4d78b24df33edbb94960b8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e745ade1f33efed5ebd9c5bb81803e73.setIcon(icon_4026d184f4d78b24df33edbb94960b8a);
+        
+    
+        var popup_c4294cf184b48e2050d3c42bb611a3c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8f9562f51b04a6dcbce0e82c5919e93 = $(`<div id="html_a8f9562f51b04a6dcbce0e82c5919e93" style="width: 100.0%; height: 100.0%;">L'Osteria<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_c4294cf184b48e2050d3c42bb611a3c3.setContent(html_a8f9562f51b04a6dcbce0e82c5919e93);
+            
+        
+
+        marker_e745ade1f33efed5ebd9c5bb81803e73.bindPopup(popup_c4294cf184b48e2050d3c42bb611a3c3)
+        ;
+
+        
+    
+    
+            var marker_b614e97f25da621972bd18df8bac2a9d = L.marker(
+                [52.38233, 9.745371],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_ff9e7e937eefa73903d1148dab8cb3af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b614e97f25da621972bd18df8bac2a9d.setIcon(icon_ff9e7e937eefa73903d1148dab8cb3af);
+        
+    
+        var popup_70179fa0432b245c8577fdde0c449818 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_396c0c64c6a84caa8f81f48a33a98928 = $(`<div id="html_396c0c64c6a84caa8f81f48a33a98928" style="width: 100.0%; height: 100.0%;">Härke-Eck<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_70179fa0432b245c8577fdde0c449818.setContent(html_396c0c64c6a84caa8f81f48a33a98928);
+            
+        
+
+        marker_b614e97f25da621972bd18df8bac2a9d.bindPopup(popup_70179fa0432b245c8577fdde0c449818)
+        ;
+
+        
+    
+    
+            var marker_e365b7d3eb817823b5e6be28ff63f630 = L.marker(
+                [52.34345, 9.754773],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_ce503672a4c42398eed38588878838bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e365b7d3eb817823b5e6be28ff63f630.setIcon(icon_ce503672a4c42398eed38588878838bb);
+        
+    
+        var popup_155cbd10f7baadaf57f28430b5af176b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e76466682f01d952d3bd5a5fe753a45 = $(`<div id="html_1e76466682f01d952d3bd5a5fe753a45" style="width: 100.0%; height: 100.0%;">Restaurant Die Insel GmbH Inh. Norbert Schu<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_155cbd10f7baadaf57f28430b5af176b.setContent(html_1e76466682f01d952d3bd5a5fe753a45);
+            
+        
+
+        marker_e365b7d3eb817823b5e6be28ff63f630.bindPopup(popup_155cbd10f7baadaf57f28430b5af176b)
+        ;
+
+        
+    
+    
+            var marker_8538c1b80b7708b90b165a5161bab157 = L.marker(
+                [52.373367, 9.707303],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_c035ba98bbe074029155c845c667ebc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8538c1b80b7708b90b165a5161bab157.setIcon(icon_c035ba98bbe074029155c845c667ebc2);
+        
+    
+        var popup_fb07326571dfb83b226b636d16799b24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53b5f119d47ef59df77343309aab4f72 = $(`<div id="html_53b5f119d47ef59df77343309aab4f72" style="width: 100.0%; height: 100.0%;">Francesca & Fratelli<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_fb07326571dfb83b226b636d16799b24.setContent(html_53b5f119d47ef59df77343309aab4f72);
+            
+        
+
+        marker_8538c1b80b7708b90b165a5161bab157.bindPopup(popup_fb07326571dfb83b226b636d16799b24)
+        ;
+
+        
+    
+    
+            var marker_7c777c2f89162de57a4f077e52ae3f0d = L.marker(
+                [52.354055, 9.74609],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_8add3fd33559c4fc8e73b294aef12303 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7c777c2f89162de57a4f077e52ae3f0d.setIcon(icon_8add3fd33559c4fc8e73b294aef12303);
+        
+    
+        var popup_ab8899faf7c6d3a09aeadde4c1d59362 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_234a4bd8f1fb034f4a0175939361777f = $(`<div id="html_234a4bd8f1fb034f4a0175939361777f" style="width: 100.0%; height: 100.0%;">Pier 51<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_ab8899faf7c6d3a09aeadde4c1d59362.setContent(html_234a4bd8f1fb034f4a0175939361777f);
+            
+        
+
+        marker_7c777c2f89162de57a4f077e52ae3f0d.bindPopup(popup_ab8899faf7c6d3a09aeadde4c1d59362)
+        ;
+
+        
+    
+    
+            var marker_328157a26de818e51c4f23138083fcae = L.marker(
+                [52.40135, 9.802752],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_5551d567662a48c66a9e6637e6b72010 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_328157a26de818e51c4f23138083fcae.setIcon(icon_5551d567662a48c66a9e6637e6b72010);
+        
+    
+        var popup_fa529449a76641901bfecee52b51d840 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f70743b6f8a844efda853e466c03354 = $(`<div id="html_9f70743b6f8a844efda853e466c03354" style="width: 100.0%; height: 100.0%;">Outbax Spirit<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_fa529449a76641901bfecee52b51d840.setContent(html_9f70743b6f8a844efda853e466c03354);
+            
+        
+
+        marker_328157a26de818e51c4f23138083fcae.bindPopup(popup_fa529449a76641901bfecee52b51d840)
+        ;
+
+        
+    
+    
+            var marker_808cfad72931aac83b9eacf277bcf1ed = L.marker(
+                [52.339916, 9.54354],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_68d340845fb3cc719113e60746964336 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_808cfad72931aac83b9eacf277bcf1ed.setIcon(icon_68d340845fb3cc719113e60746964336);
+        
+    
+        var popup_c6683d0e058bb2b27a6766c3c4186a67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34065f84e33fafaba5e2be7a5b9c467b = $(`<div id="html_34065f84e33fafaba5e2be7a5b9c467b" style="width: 100.0%; height: 100.0%;">Gasthaus Müller<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_c6683d0e058bb2b27a6766c3c4186a67.setContent(html_34065f84e33fafaba5e2be7a5b9c467b);
+            
+        
+
+        marker_808cfad72931aac83b9eacf277bcf1ed.bindPopup(popup_c6683d0e058bb2b27a6766c3c4186a67)
+        ;
+
+        
+    
+    
+            var marker_8cb49e1de2fc4237ed26a6b71565dec0 = L.marker(
+                [52.372611, 9.733762],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_8fee67df059a21a0b1284e1a520d0ccc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8cb49e1de2fc4237ed26a6b71565dec0.setIcon(icon_8fee67df059a21a0b1284e1a520d0ccc);
+        
+    
+        var popup_a2ffd961484096555b62089d08d1692b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b4e7f48986256318a0583b0ab8792e2 = $(`<div id="html_8b4e7f48986256318a0583b0ab8792e2" style="width: 100.0%; height: 100.0%;">Kilimanjaro<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_a2ffd961484096555b62089d08d1692b.setContent(html_8b4e7f48986256318a0583b0ab8792e2);
+            
+        
+
+        marker_8cb49e1de2fc4237ed26a6b71565dec0.bindPopup(popup_a2ffd961484096555b62089d08d1692b)
+        ;
+
+        
+    
+    
+            var marker_4ddf0ee01bb5a6e15674145235d5d8fc = L.marker(
+                [52.392865, 9.750642],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_7f037ed6d2c6a80506754e8378e9ff5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ddf0ee01bb5a6e15674145235d5d8fc.setIcon(icon_7f037ed6d2c6a80506754e8378e9ff5f);
+        
+    
+        var popup_c00e651ad99a2f9e2d357ba875a0600d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77f589eaec33909701ce18774cdec31e = $(`<div id="html_77f589eaec33909701ce18774cdec31e" style="width: 100.0%; height: 100.0%;">Costas Greek Taverna<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_c00e651ad99a2f9e2d357ba875a0600d.setContent(html_77f589eaec33909701ce18774cdec31e);
+            
+        
+
+        marker_4ddf0ee01bb5a6e15674145235d5d8fc.bindPopup(popup_c00e651ad99a2f9e2d357ba875a0600d)
+        ;
+
+        
+    
+    
+            var marker_c0c819f3092eb558b5db556f23291ad2 = L.marker(
+                [52.360745, 9.828853],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_0abaaf805d95f3dad4839f35c53dac48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0c819f3092eb558b5db556f23291ad2.setIcon(icon_0abaaf805d95f3dad4839f35c53dac48);
+        
+    
+        var popup_d54c17891d0605d60ff5a044f2cd5d8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b5c3fd6e035c357b51eeb6aeed943b4 = $(`<div id="html_3b5c3fd6e035c357b51eeb6aeed943b4" style="width: 100.0%; height: 100.0%;">Eiscafe Soravia<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_d54c17891d0605d60ff5a044f2cd5d8a.setContent(html_3b5c3fd6e035c357b51eeb6aeed943b4);
+            
+        
+
+        marker_c0c819f3092eb558b5db556f23291ad2.bindPopup(popup_d54c17891d0605d60ff5a044f2cd5d8a)
+        ;
+
+        
+    
+    
+            var marker_44badcbc7c8ed5d0964f433426318330 = L.marker(
+                [52.358596, 9.825707],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_3e5a59d96e78540fa17797d8ff665ee4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44badcbc7c8ed5d0964f433426318330.setIcon(icon_3e5a59d96e78540fa17797d8ff665ee4);
+        
+    
+        var popup_044fbd444ea76f98338de19daa1d7a83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb4c8887616a97123e9695e709c28fa9 = $(`<div id="html_fb4c8887616a97123e9695e709c28fa9" style="width: 100.0%; height: 100.0%;">Tropeano Di-Vino<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_044fbd444ea76f98338de19daa1d7a83.setContent(html_fb4c8887616a97123e9695e709c28fa9);
+            
+        
+
+        marker_44badcbc7c8ed5d0964f433426318330.bindPopup(popup_044fbd444ea76f98338de19daa1d7a83)
+        ;
+
+        
+    
+    
+            var marker_91ee1322f89101ca56bef4e04b9f04d8 = L.marker(
+                [52.366476, 9.752136],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_5dfc378661c6b4f6f44375ac28c267c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_91ee1322f89101ca56bef4e04b9f04d8.setIcon(icon_5dfc378661c6b4f6f44375ac28c267c7);
+        
+    
+        var popup_a24830c306d9d5f3065e505b7262e4ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7dbc604804683b47c5538fe064c39d0a = $(`<div id="html_7dbc604804683b47c5538fe064c39d0a" style="width: 100.0%; height: 100.0%;">Spandau Süd<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_a24830c306d9d5f3065e505b7262e4ee.setContent(html_7dbc604804683b47c5538fe064c39d0a);
+            
+        
+
+        marker_91ee1322f89101ca56bef4e04b9f04d8.bindPopup(popup_a24830c306d9d5f3065e505b7262e4ee)
+        ;
+
+        
+    
+    
+            var marker_c63604f121c7f6033b0b0ad7b88faf4e = L.marker(
+                [52.491241, 9.852883],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_f5f830c631cefc8d7ee50b72a5c642e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c63604f121c7f6033b0b0ad7b88faf4e.setIcon(icon_f5f830c631cefc8d7ee50b72a5c642e2);
+        
+    
+        var popup_f9be2d9ce73308f4052a4fb1a54b79e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ee82df0ecb2089760cbbb3d93ef6517 = $(`<div id="html_5ee82df0ecb2089760cbbb3d93ef6517" style="width: 100.0%; height: 100.0%;">Trattoria Pasta e Vino<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_f9be2d9ce73308f4052a4fb1a54b79e7.setContent(html_5ee82df0ecb2089760cbbb3d93ef6517);
+            
+        
+
+        marker_c63604f121c7f6033b0b0ad7b88faf4e.bindPopup(popup_f9be2d9ce73308f4052a4fb1a54b79e7)
+        ;
+
+        
+    
+    
+            var marker_9ea9118ea965ccbd258ef623d0cb46ea = L.marker(
+                [52.37188, 9.734011],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_0e11ae1297cc3142bd37d645b132d61d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ea9118ea965ccbd258ef623d0cb46ea.setIcon(icon_0e11ae1297cc3142bd37d645b132d61d);
+        
+    
+        var popup_e6cbd9d222ea7db9af1a992cc9c6f82b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef508cb6a728c7384b0486a39cf4bf9b = $(`<div id="html_ef508cb6a728c7384b0486a39cf4bf9b" style="width: 100.0%; height: 100.0%;">Broyhanhaus Hannover<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_e6cbd9d222ea7db9af1a992cc9c6f82b.setContent(html_ef508cb6a728c7384b0486a39cf4bf9b);
+            
+        
+
+        marker_9ea9118ea965ccbd258ef623d0cb46ea.bindPopup(popup_e6cbd9d222ea7db9af1a992cc9c6f82b)
+        ;
+
+        
+    
+    
+            var marker_7052ebd2f34ab369ccaca29f323194ca = L.marker(
+                [52.375072, 9.75163],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_0dd9fe33c77290c592e998289d674098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7052ebd2f34ab369ccaca29f323194ca.setIcon(icon_0dd9fe33c77290c592e998289d674098);
+        
+    
+        var popup_296af798d7420233c1f1b0da1693ba63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a5f8c5644140e53355ad23e22bf1337 = $(`<div id="html_0a5f8c5644140e53355ad23e22bf1337" style="width: 100.0%; height: 100.0%;">Speiserei Hannover<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_296af798d7420233c1f1b0da1693ba63.setContent(html_0a5f8c5644140e53355ad23e22bf1337);
+            
+        
+
+        marker_7052ebd2f34ab369ccaca29f323194ca.bindPopup(popup_296af798d7420233c1f1b0da1693ba63)
+        ;
+
+        
+    
+    
+            var marker_036255d8bfe11135ad6056dafe0bc214 = L.marker(
+                [52.370492, 9.759686],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_c8aa6a3c18b5141ab2d9d685bcaa7705 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_036255d8bfe11135ad6056dafe0bc214.setIcon(icon_c8aa6a3c18b5141ab2d9d685bcaa7705);
+        
+    
+        var popup_53b0a1096c1cfdfc03f775cd33a05af7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc7290d1a316878dbb8a159be0ee49c3 = $(`<div id="html_cc7290d1a316878dbb8a159be0ee49c3" style="width: 100.0%; height: 100.0%;">Ristorante Tesoro<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_53b0a1096c1cfdfc03f775cd33a05af7.setContent(html_cc7290d1a316878dbb8a159be0ee49c3);
+            
+        
+
+        marker_036255d8bfe11135ad6056dafe0bc214.bindPopup(popup_53b0a1096c1cfdfc03f775cd33a05af7)
+        ;
+
+        
+    
+    
+            var marker_721406c89bcc135adc35b920488bc14a = L.marker(
+                [52.342706, 9.826735],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_42591f334bb6f0ba8a000c04f9e64055 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_721406c89bcc135adc35b920488bc14a.setIcon(icon_42591f334bb6f0ba8a000c04f9e64055);
+        
+    
+        var popup_c1a5d6e0e541e5a8d0030b60af8097c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_859f7c28f78155c01c34190193595150 = $(`<div id="html_859f7c28f78155c01c34190193595150" style="width: 100.0%; height: 100.0%;">Rembetiko<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_c1a5d6e0e541e5a8d0030b60af8097c3.setContent(html_859f7c28f78155c01c34190193595150);
+            
+        
+
+        marker_721406c89bcc135adc35b920488bc14a.bindPopup(popup_c1a5d6e0e541e5a8d0030b60af8097c3)
+        ;
+
+        
+    
+    
+            var marker_5207c6f8f06efd827b1d235c2f3328b9 = L.marker(
+                [52.369319, 9.751357],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_94a3be1ce8b26236f922da4dcef40837 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5207c6f8f06efd827b1d235c2f3328b9.setIcon(icon_94a3be1ce8b26236f922da4dcef40837);
+        
+    
+        var popup_4f6f5067e05383b8c5856ec41cbe14da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1fdd666dff5f7649db710c5c6529299 = $(`<div id="html_e1fdd666dff5f7649db710c5c6529299" style="width: 100.0%; height: 100.0%;">Kindai Restaurant Hannover<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_4f6f5067e05383b8c5856ec41cbe14da.setContent(html_e1fdd666dff5f7649db710c5c6529299);
+            
+        
+
+        marker_5207c6f8f06efd827b1d235c2f3328b9.bindPopup(popup_4f6f5067e05383b8c5856ec41cbe14da)
+        ;
+
+        
+    
+    
+            var marker_807ad5d303057ab972e01c1ba33e3072 = L.marker(
+                [52.434823, 9.865889],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_377ddf27eb2951d44d5b5a670f302a63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_807ad5d303057ab972e01c1ba33e3072.setIcon(icon_377ddf27eb2951d44d5b5a670f302a63);
+        
+    
+        var popup_3c7b4b5ae1a2b4fe37e1a69b5921882a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ea6d676b440a58cee2af347f585ef88 = $(`<div id="html_3ea6d676b440a58cee2af347f585ef88" style="width: 100.0%; height: 100.0%;">El Cortijo<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_3c7b4b5ae1a2b4fe37e1a69b5921882a.setContent(html_3ea6d676b440a58cee2af347f585ef88);
+            
+        
+
+        marker_807ad5d303057ab972e01c1ba33e3072.bindPopup(popup_3c7b4b5ae1a2b4fe37e1a69b5921882a)
+        ;
+
+        
+    
+    
+            var marker_8da1d0e96f5d42f693e1d7520405f297 = L.marker(
+                [52.271822, 9.567986],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_8260a06e31aee20f89bd571d413f18a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8da1d0e96f5d42f693e1d7520405f297.setIcon(icon_8260a06e31aee20f89bd571d413f18a8);
+        
+    
+        var popup_8b20f1e9a9c9e79eb45ad7dbcece3ba5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ded39f68bcbdce1d15a06179a47a293c = $(`<div id="html_ded39f68bcbdce1d15a06179a47a293c" style="width: 100.0%; height: 100.0%;">Eis & Fantasy<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_8b20f1e9a9c9e79eb45ad7dbcece3ba5.setContent(html_ded39f68bcbdce1d15a06179a47a293c);
+            
+        
+
+        marker_8da1d0e96f5d42f693e1d7520405f297.bindPopup(popup_8b20f1e9a9c9e79eb45ad7dbcece3ba5)
+        ;
+
+        
+    
+    
+            var marker_7cb6eee6d668a84b9497e399e6fb1241 = L.marker(
+                [52.319655, 9.399821],
+                {}
+            ).addTo(map_d04216c9c050b8b8467bfbc718d20dfa);
+        
+    
+            var icon_763ee215f345bd0675c9d83125f2cfe4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7cb6eee6d668a84b9497e399e6fb1241.setIcon(icon_763ee215f345bd0675c9d83125f2cfe4);
+        
+    
+        var popup_584f1772c832dc6e793f72287a7aee65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ceb756dad011d46893daad71baac866f = $(`<div id="html_ceb756dad011d46893daad71baac866f" style="width: 100.0%; height: 100.0%;">Mooshütte<br>Рейтинг: Нет рейтинга</div>`)[0];
+                popup_584f1772c832dc6e793f72287a7aee65.setContent(html_ceb756dad011d46893daad71baac866f);
+            
+        
+
+        marker_7cb6eee6d668a84b9497e399e6fb1241.bindPopup(popup_584f1772c832dc6e793f72287a7aee65)
+        ;
+
+        
+    
+</script>
+</html>
